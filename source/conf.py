@@ -15,11 +15,6 @@ import sys
 # sys.path.insert(0, os.path.abspath('.'))
 import sphinx_rtd_theme
 
-def setup(sphinx):
-    from pygments_lexer_solidity import SolidityLexer
-    sphinx.add_lexer('Solidity', SolidityLexer())
-    sphinx.add_stylesheet('css/custom.css')
-
 # -- Project information -----------------------------------------------------
 project = 'golang-pattern'
 copyright = '2019, zhaozheng'
