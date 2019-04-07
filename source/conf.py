@@ -10,15 +10,17 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
+import os
+import sys
 # sys.path.insert(0, os.path.abspath('.'))
 import sphinx_rtd_theme
-# Markdown support
-from recommonmark.parser import CommonMarkParser
+
+def setup(sphinx):
+    from pygments_lexer_solidity import SolidityLexer
+    sphinx.add_lexer('Solidity', SolidityLexer())
+    sphinx.add_stylesheet('css/custom.css')
 
 # -- Project information -----------------------------------------------------
-
 project = 'golang-pattern'
 copyright = '2019, zhaozheng'
 author = 'zhaozheng'
@@ -43,6 +45,12 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
+# The master toctree document.
+master_doc = 'index'
+
+# If true, `todo` and `todoList` produce output, else they produce nothing.
+todo_include_todos = True
+
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -57,7 +65,7 @@ html_theme = "sphinx_rtd_theme"
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # Parser
-source_parsers = {
-    '.md': CommonMarkParser,
-}
-source_suffix = ['.rst', '.md']
+# source_parsers = {
+#     '.md': CommonMarkParser,
+# }
+# source_suffix = ['.rst', '.md']

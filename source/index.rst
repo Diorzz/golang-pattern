@@ -6,15 +6,16 @@
 Golang设计模式实践
 ==========================================
 
+本文档内容包含了软件开发中常用的设计模式，并附有Go语言实现例子。
+
+
+索引
+===========
+
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 4
+
+   introduction.rst
+   patterns/decorator.rst
 
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
