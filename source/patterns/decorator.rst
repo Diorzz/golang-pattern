@@ -29,7 +29,7 @@ Go的语法非常简洁，以至于在Go中不存在"继承"这一概念，所�
 
 装饰者模式的代码结构如下图所示：
 
-..  image:: ../_static/img/decorator.png
+..  image:: ../_static/img/decorator/decorator.png
 
 图中涉及的几个对象的含义如下：
 
@@ -47,6 +47,6 @@ Go的语法非常简洁，以至于在Go中不存在"继承"这一概念，所�
 
 程序员Bob打算创业开一家奶茶店，为此他自己写了一个奶茶订单系统。主要的功能是为不同的奶茶结算出不同的价格。
 
-..  image:: ../_static/img/milktea.jpg
+..  image:: ../_static/img/decorator/milktea.jpg
 
 奶茶有不同的类型，并且每种奶茶都可以附加一些小作料，例如：珍珠、布丁、红豆等等。每位顾客可以选择一种类型的奶茶并添加任意的作料，例如：红豆布丁奶茶！
