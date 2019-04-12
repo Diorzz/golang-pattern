@@ -50,3 +50,15 @@ Go的语法非常简洁，以至于在Go中不存在"继承"这一概念，所�
 ..  image:: ../_static/img/decorator/milktea.jpg
 
 奶茶有不同的类型，并且每种奶茶都可以附加一些小作料，例如：珍珠、布丁、红豆等等。每位顾客可以选择一种类型的奶茶并添加任意的作料，例如：红豆布丁奶茶！
+
+
+实现：第一版
+============
+很快，Bob就实现了一个版本：
+
+::
+
+    type MiklTea interface{
+        description() string
+        cost() float64
+    }
